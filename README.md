@@ -55,9 +55,10 @@ npm install
 npm install cypress --save-dev
 npx cypress open
 ```
+After run **npx cypress open** will generate cypress folder
 
-Mirage setting
 
+setting in cypress/support/index.js
 ```javascript=
 // cypress/support/index.js
 Cypress.on("window:before:load", (win) => {
