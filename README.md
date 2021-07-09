@@ -90,9 +90,14 @@ npm cypress open
 
 
 ### Reference
+Mirage Workshop Demo in Codesandbox:
+https://codesandbox.io/s/mirage-workshop-sd8zp?file=/src/App.tsx
+
 Start with Mirage:
 https://miragejs.com/docs/getting-started/introduction/
 
 
 Mirage with Cypress: 
 https://miragejs.com/quickstarts/cypress/
+
+https://github.com/miragejs/examples/blob/master/react-local-dev-and-cypress/src/index.js
