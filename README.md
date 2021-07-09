@@ -86,3 +86,12 @@ npx cypress run --browser chrome
 
 npm cypress open
 ```
+
+
+### Reference
+Start with Mirage:
+https://miragejs.com/docs/getting-started/introduction/
+
+
+Mirage with Cypress: 
+https://miragejs.com/quickstarts/cypress/
