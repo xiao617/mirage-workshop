@@ -47,6 +47,16 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ```
 npm install
 ```
+## Mirage Install
+
+```
+#Using npm
+npm install --save-dev miragejs
+
+#Using Yarn
+yarn add --dev miragejs
+```
+
 
 ## About Cypress
 
