@@ -60,8 +60,7 @@ export class NodeService {
   async postTodoData(data: string) {
     try {
       const res = await axios.post("/todos", {
-        name: data,
-        id: data
+        name: data
       });
     } catch (e) {
       console.error(e);

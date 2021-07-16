@@ -95,7 +95,11 @@ npx cypress run --spec "cypress/integration/mp-spec.js"
 
 npx cypress run --browser chrome
 
+npx cypress run
+//run all tests 
+
 npm cypress open
+
 ```
 
 

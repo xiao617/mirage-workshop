@@ -12,6 +12,7 @@ const environment = process.env.NODE_ENV;
 if (environment !== 'production') {
   MockServer({environment});
 }
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
