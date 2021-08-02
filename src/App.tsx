@@ -64,8 +64,8 @@ export default function App() {
   async function sendAddTodo() {
     //await postData();
     //getData();
-    await nodeService.postTodoData(addTodo);
-    nodeService.getTodoData().then((data) => setTodolist(data));
+    nodeService.postTodoData(addTodo).then((data) => setTodolist(data));
+    //nodeService.getTodoData().then((data) => setTodolist(data));
   }
   async function delSelectTodo() {
     //await deleteData();
@@ -73,8 +73,8 @@ export default function App() {
     //getData();
     if(selectTodo!== undefined)
     {
-      await nodeService.delTodoData(selectTodo.id);
-      nodeService.getTodoData().then((data) => setTodolist(data));
+      nodeService.delTodoData(selectTodo.id).then((data) => setTodolist(data));
+      //nodeService.getTodoData().then((data) => setTodolist(data));
     }
     
   }

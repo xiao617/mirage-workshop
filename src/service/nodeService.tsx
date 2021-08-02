@@ -62,6 +62,7 @@ export class NodeService {
       const res = await axios.post("/todos", {
         name: data
       });
+      return res.data.todos;
     } catch (e) {
       console.error(e);
     }
@@ -69,6 +70,7 @@ export class NodeService {
   async delTodoData(data: string) {
     try {
       const res = await axios.delete(`/todos/${data}`);
+      return res.data.todos;
     } catch (e) {
       console.error(e);
     }

@@ -33,7 +33,8 @@ export function MockServer({ environment = "development" }) {
       this.post("/todos", (schema, request) => {
         //debugger;
         let attrs = JSON.parse(request.requestBody);
-        return schema.create("todo", attrs);
+        schema.create("todo", attrs);
+        return schema.all("todo");
       });
       this.del("/todos/:key", (schema, request) => {
         let keyid = request.params.key;
@@ -41,7 +42,7 @@ export function MockServer({ environment = "development" }) {
         if(post !== null)
           post.destroy();
        //schema.find("todo", keyid).destroy();
-        return {};
+        return schema.all("todo");
       });
     }
   });
