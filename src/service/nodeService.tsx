@@ -7,11 +7,6 @@ import { of } from "fp-ts/Identity";
 import { zero } from "fp-ts/Array";
 import { pipe } from "fp-ts/lib/function";
 
-export type todoObject = {
-  name: string;
-  id: string;
-};
-
 export class NodeService {
     /*
   getTodoData(): TE.TaskEither<Error, Array<todoObject>> {

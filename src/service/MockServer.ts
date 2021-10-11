@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { createServer, Factory, Model } from "miragejs";
-import { todoObject } from "./nodeService";
+import { TodoObject } from "../types/TodoObject";
 import faker from "faker";
 
 export function MockServer({ environment = "development" }) {
   return createServer({
     environment,
     models: {
-      todo: Model.extend<Partial<todoObject>>({})
+      todo: Model.extend<Partial<TodoObject>>({})
     },
     factories: {
-      todo: Factory.extend<Partial<todoObject>>({
+      todo: Factory.extend<Partial<TodoObject>>({
         get name() {
           //console.log(this.id)
           //faker.seed(Number(this.id))
@@ -22,7 +22,7 @@ export function MockServer({ environment = "development" }) {
     seeds(server) {
       //server.schema.create('todo',{ name: "Go to Market" });
       //server.create("todo", { name: "Buy Cookies" });
-      //server.createList("todo", 3);
+      server.createList("todo", 3);
     },
     routes() {
       //this.urlPrefix = "https://sd8zp.csb.app/";

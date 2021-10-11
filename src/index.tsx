@@ -6,7 +6,7 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import { MockServer } from "./service/MockServer";
-import HeaderBar from "./pages/HeaderBar";
+import TodoPage from './pages/TodoPage';
 
 const environment = process.env.NODE_ENV;
 
@@ -19,11 +19,11 @@ document.title = "Demo Project"
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HeaderBar></HeaderBar>
+      
       <div className="p-grid">
       <div className="p-col-4" />
         <div className="p-col-4">
-        <App />
+        <TodoPage />
         </div>
         <div className="p-col-4" />
       </div>
